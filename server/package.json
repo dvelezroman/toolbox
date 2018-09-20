@@ -4,13 +4,16 @@
     "description": "Alto ToolBox",
     "main": "app.js",
     "scripts": {
-        "start": "nodemon app.js",
+        "server": "nodemon app.js",
+        "client": "cd ../browser/ && npm run start",
+        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "Best Team",
     "license": "ISC",
     "dependencies": {
         "body-parser": "^1.18.3",
+        "concurrently": "^4.0.1",
         "cookie-parser": "^1.4.3",
         "express": "^4.16.3",
         "express-session": "^1.15.6",
