@@ -1,24 +1,28 @@
 {
-    "name": "toolbox",
-    "version": "1.0.0",
-    "description": "Alto ToolBox",
-    "main": "app.js",
-    "scripts": {
-        "server": "nodemon app.js",
-        "client": "cd ../browser/ && npm run start",
-        "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "author": "Best Team",
-    "license": "ISC",
-    "dependencies": {
-        "body-parser": "^1.18.3",
-        "concurrently": "^4.0.1",
-        "cookie-parser": "^1.4.3",
-        "express": "^4.16.3",
-        "express-session": "^1.15.6",
-        "nodemon": "^1.17.5",
-        "path": "^0.12.7"
-    },
-    "devDependencies": {}
+  "name": "toolbox",
+  "version": "1.0.0",
+  "description": "Alto ToolBox",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app.js",
+    "client": "cd ../browser/ && npm run start",
+    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
+    "test": "mocha 'tests/apiTest.js'"
+  },
+  "author": "Best Team",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.0.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "nodemon": "^1.17.5",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "should": "^13.2.3",
+    "supertest": "^3.3.0"
+  }
 }
