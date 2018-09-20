@@ -1,0 +1,21 @@
+{
+    "name": "toolbox",
+    "version": "1.0.0",
+    "description": "Alto ToolBox",
+    "main": "app.js",
+    "scripts": {
+        "start": "nodemon app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "Best Team",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "cookie-parser": "^1.4.3",
+        "express": "^4.16.3",
+        "express-session": "^1.15.6",
+        "nodemon": "^1.17.5",
+        "path": "^0.12.7"
+    },
+    "devDependencies": {}
+}
