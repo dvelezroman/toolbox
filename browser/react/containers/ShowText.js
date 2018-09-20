@@ -3,7 +3,10 @@ import React from "react";
 const ShowText = (props) => {
   return (
     <div>
-      <input className="form-control" type="text" placeholder={props.text} readOnly></input>
+      <div>
+        <label htmlFor="textFromApi">Texto recibido desde la API</label> 
+      </div>
+      <input className="form-control" id="textFromApi" type="text" placeholder={props.text} readOnly></input>
     </div>
   );
 };
