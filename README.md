@@ -11,3 +11,6 @@
 
 ```npm run dev```
 
+## PARA EJECUTAR LOS TESTS DE LA API
+
+```server/ npm run test```
