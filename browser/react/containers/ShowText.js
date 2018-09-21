@@ -3,10 +3,10 @@ import React from "react";
 const ShowText = (props) => {
   return (
     <div>
-      <div>
+      <div className="form">
         <label htmlFor="textFromApi">Texto recibido desde la API</label> 
       </div>
-      <input className="form-control" id="textFromApi" type="text" placeholder={props.text} readOnly></input>
+      <input className="form-control" id="textFromApi" type="text" value={props.text} placeholder="Lo que devuelve la API" readOnly />
     </div>
   );
 };

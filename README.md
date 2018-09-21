@@ -7,7 +7,7 @@
 
 ```cd server/ && npm install```
 
-## PARA EJECUTAR
+## PARA EJECUTAR API y CLIENTE
 
 ```npm run dev```
 
